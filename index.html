@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+        Coderush
+    </title>
+<link href="styles.css" rel="stylesheet">
+<style>
+ nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            color:black;
+        }
+a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+#popup {
+            display: none; 
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: white;
+            border: 2px solid black;
+            z-index: 999;
+        }
+
+</style>
+    <head>
+        <body>
+            <header style="background-color:beige;padding:11px">
+                <h1 style="text-align:center; color:darkgreen">
+                    The Soccer Player - Yajur
+                </h1>
+            </header>
+
+            <hr style="margin:1px">
+            <nav>
+                <a href="Gamescoderush.html">My Fav Video Game</a>
+                <a href="#">What I like to do in my freetime</a>
+                <a href="#">My fav food</a>
+                <a href="#">My Fav movie(s)</a>
+            </nav>
+            <hr style="margin:2px">
+<img src="helianthus-yellow-flower-pixabay_11863.jpg" width="200px" alt="flower">
+
+
+<button onclick="showPopup()">Show Image</button>
+<div id="popup">
+    <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="My Picture" width="200"><br>
+    <button onclick="hidePopup()">Close</button>
+</div>
+
+<script>
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+function hidePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+<button onclick="showFact()">Click for a Fact</button>
+
+<script>
+function showFact() {
+    alert("A flower is the reproductive structure of flowering plants, also known as blooms or blossoms. They are typically colorful and attract pollinators like insects and birds. Flowers contain both male and female reproductive parts, which are crucial for seed production. ");
+}
+</script>
+
+   </body>
+  </html>
